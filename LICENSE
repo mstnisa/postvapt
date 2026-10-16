@@ -1,0 +1,59 @@
+PostVAPT Evaluation License
+Version 1.0
+
+Copyright (c) 2026 Mst. Awalunnisa <awalunnisa41@gmail.com>. All rights reserved.
+
+"Software" means PostVAPT, in source or compiled form, including its
+documentation, rule data and any updates provided by the Licensor.
+"Licensor" means the copyright holder named above. "You" means the person or
+organisation that obtained the Software.
+
+1. Grant. Subject to these terms, the Licensor grants You a free,
+   non-exclusive, non-transferable, revocable licence to install and run the
+   Software on systems You control, solely to evaluate it internally and to
+   give the Licensor feedback ("Evaluation").
+
+2. Restrictions. Except where the Licensor agrees in writing, You must not:
+   a. use the Software in production, to deliver services to third parties,
+      or for any commercial purpose other than Evaluation;
+   b. copy, sell, sublicense, rent, lend, publish or otherwise distribute the
+      Software or any part of it;
+   c. modify the Software or create derivative works from it;
+   d. reverse engineer, decompile, disassemble or otherwise attempt to derive
+      source code, algorithms or rule data from compiled parts of the
+      Software, except to the extent applicable law expressly permits this
+      despite this restriction;
+   e. remove or alter copyright, licence or attribution notices.
+
+3. Feedback. If You give the Licensor suggestions or bug reports, the
+   Licensor may use them without obligation to You.
+
+4. Your data. Scan results, findings and other data You load into the
+   Software remain Yours. The Software does not send Your data to the
+   Licensor.
+
+5. Third-party components. The Software includes open-source components
+   licensed under their own terms, listed in THIRD_PARTY_NOTICES. Nothing in
+   this licence limits Your rights under those terms.
+
+6. Term. This licence lasts until either party ends it. It ends
+   automatically if You breach it. On termination You must stop using and
+   delete the Software.
+
+7. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+   KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE AND NON-INFRINGEMENT. Security findings, priorities,
+   compliance mappings and retest outcomes produced by the Software are
+   decision support and must be reviewed by qualified personnel.
+
+8. Limitation of liability. TO THE EXTENT PERMITTED BY LAW, THE LICENSOR IS
+   NOT LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES,
+   OR FOR LOSS OF DATA, PROFITS OR BUSINESS, ARISING FROM THE SOFTWARE OR
+   THIS LICENCE.
+
+9. Authorised testing. The retest features send network probes. You are
+   responsible for running them only against systems You are authorised to
+   test.
+
+For commercial or production licensing, contact the Licensor at the address
+above.

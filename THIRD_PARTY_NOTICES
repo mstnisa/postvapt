@@ -1,0 +1,33 @@
+Third-party components distributed with PostVAPT
+================================================
+
+PostVAPT itself is licensed under the PostVAPT Evaluation License (LICENSE).
+The components below keep their own licences; nothing in the PostVAPT licence
+restricts your rights under them. Full licence texts are shipped in the
+`licenses/` folder of every binary distribution.
+
+Python (CPython runtime embedded in compiled builds)  -  PSF-2.0  -  https://www.python.org/
+alembic 1.20.0  -  MIT  -  https://alembic.sqlalchemy.org
+SQLAlchemy 2.1.4  -  MIT  -  https://www.sqlalchemy.org
+fastapi 0.143.0  -  MIT  -  https://github.com/fastapi/fastapi
+starlette 1.7.0  -  BSD-3-Clause  -  https://github.com/Kludex/starlette
+pydantic 2.14.0  -  MIT  -  https://github.com/pydantic/pydantic
+pydantic_core 2.50.0  -  MIT  -  https://github.com/pydantic/pydantic
+uvicorn 0.54.0  -  BSD-3-Clause  -  https://uvicorn.dev/release-notes
+Jinja2 3.1.6  -  BSD License  -  https://jinja.palletsprojects.com/changes/
+MarkupSafe 3.0.4  -  BSD-3-Clause  -  https://palletsprojects.com/donate
+python-multipart 0.0.32  -  Apache-2.0  -  https://github.com/Kludex/python-multipart
+pypdf 6.20.0  -  BSD-3-Clause  -  https://github.com/py-pdf/pypdf/issues
+anyio 4.15.1  -  MIT  -  https://anyio.readthedocs.io/en/latest/
+h11 0.16.0  -  MIT  -  https://github.com/python-hyper/h11
+click 8.5.0  -  BSD-3-Clause  -  https://click.palletsprojects.com/page/changes/
+idna 3.20  -  BSD-3-Clause  -  https://github.com/kjd/idna/blob/master/HISTORY.md
+typing_extensions 4.16.0  -  PSF-2.0  -  https://github.com/python/typing_extensions/issues
+annotated-types 0.8.0  -  MIT  -  https://github.com/annotated-types/annotated-types
+Mako 1.4.3  -  MIT  -  https://www.makotemplates.org/
+psycopg 3.3.6  -  LGPL-3.0-only  -  https://psycopg.org/
+psycopg-binary 3.3.6  -  LGPL-3.0-only  -  https://psycopg.org/
+typing-inspection 0.4.4  -  MIT  -  https://github.com/pydantic/typing-inspection
+
+psycopg is LGPL-3.0: it is shipped as an unmodified, separately replaceable
+Python package (never compiled into the PostVAPT engine).
