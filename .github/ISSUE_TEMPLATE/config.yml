@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Request a free license key
+    url: https://docs.google.com/forms/d/e/1FAIpQLSd--0kYvYrB2WO6oxgv-_bCoI7tWw8U95I-gF2Qh9Isnc6e_Q/viewform
+    about: Fill in the form and your free key is e-mailed to you.
+  - name: User Manual
+    url: https://github.com/mstnisa/postvapt/blob/main/USER_MANUAL.md
+    about: Step-by-step guide to every screen and task.

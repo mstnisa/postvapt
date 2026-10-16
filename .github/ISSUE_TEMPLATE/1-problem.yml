@@ -1,0 +1,29 @@
+name: Report a problem
+description: Something does not work as expected
+labels: [problem]
+body:
+  - type: markdown
+    attributes:
+      value: "Thank you for helping improve PostVAPT. Please do not include scan results, host names, IP addresses, license keys or other sensitive data."
+  - type: input
+    id: version
+    attributes:
+      label: PostVAPT version
+      description: "Shown at the bottom of every page, or run: postvapt --version"
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options: [Windows, Linux, Docker]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead? Error messages help a lot.
+    validations:
+      required: true

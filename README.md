@@ -2,61 +2,68 @@
 
 **From VAPT findings to verified fixes.**
 
-PostVAPT turns vulnerability scanner reports into a prioritised, tracked and
-verified remediation plan, with compliance evidence for **PCI DSS v4.0** and the
-**Bangladesh Bank ICT Security Guideline v4.0**. It runs entirely on your own
-computers: your scan data never leaves your network.
+PostVAPT reads the reports from your vulnerability scanners and penetration
+tests, tells you **what to fix first and why**, checks that fixes really
+worked, and produces **compliance evidence for PCI DSS v4.0 and the Bangladesh
+Bank ICT Security Guideline v4.0**. It runs on your own computer or server:
+your scan data never leaves your network.
 
+[![Download](https://img.shields.io/github/v/release/mstnisa/postvapt?label=download&color=0e7bc0)](https://github.com/mstnisa/postvapt/releases/latest)
 ![Downloads](https://img.shields.io/github/downloads/mstnisa/postvapt/total?label=downloads)
-![Latest release](https://img.shields.io/github/v/release/mstnisa/postvapt?label=release)
+[![Free license key](https://img.shields.io/badge/license%20key-free-2e8540)](https://docs.google.com/forms/d/e/1FAIpQLSd--0kYvYrB2WO6oxgv-_bCoI7tWw8U95I-gF2Qh9Isnc6e_Q/viewform)
 
-## What it does
+![PostVAPT overview](docs/images/01-overview.png)
 
-- **Imports your scanners:** Nessus, OpenVAS / Greenbone, Burp Suite, OWASP ZAP,
-  Nmap, Nuclei, SARIF (Trivy, Grype, Semgrep, CodeQL...) and CSV exports
-  (Qualys, Rapid7, Acunetix, Invicti and others).
-- **Decides what to fix first:** a transparent, deterministic SSVC decision tree
-  using EPSS, the CISA Known Exploited Vulnerabilities catalogue and your asset
-  context. Every decision shows why it was made.
-- **Tracks every finding across scans:** new, persisting, reappeared and fixed,
-  with SLA due dates.
-- **Keeps people in control:** downgrades and risky decisions wait for an
-  analyst's review, and every action is written to an audit log.
-- **Confirms fixes safely:** non-destructive retests (TLS version, HTTP security
-  headers, service banners, SMB signing) before a finding is closed.
-- **Produces compliance evidence:** findings mapped to PCI DSS v4.0 and
-  Bangladesh Bank ICT Security Guideline v4.0 controls, exported as an
-  executive evidence pack (HTML, Markdown, JSON).
-- **Works the way you do:** web dashboard, command line and a JSON API for
-  automation (n8n, CI pipelines). Solo use or a team with roles.
-- **Optional AI assistance:** an LLM (Groq, OpenAI or a local Ollama model) can
-  extract evidence from findings. It never decides priority, and IP addresses
-  are removed before anything is sent to a cloud provider. Off by default.
+## Start in 3 steps
 
-## Editions
+| Step | What to do |
+|---|---|
+| **1. Get a free key** | Fill in the **[license key request form](https://docs.google.com/forms/d/e/1FAIpQLSd--0kYvYrB2WO6oxgv-_bCoI7tWw8U95I-gF2Qh9Isnc6e_Q/viewform)**. The key arrives by e-mail, usually within one business day. |
+| **2. Download** | Open the **[latest release](https://github.com/mstnisa/postvapt/releases/latest)** and download the file for Windows, Linux or Docker. |
+| **3. Start** | Windows: extract the zip and double-click **`Start PostVAPT.bat`**. Paste your key on the **License** page. |
 
-| | Free edition | Paid edition |
-|---|---|---|
-| Assets (distinct hosts) | up to 50 | unlimited |
-| User accounts | up to 3 | unlimited |
-| PostgreSQL database | - | yes |
-| Price | free | coming later |
+Nothing else to install. No key yet? Run `postvapt.exe demo --serve` to explore
+PostVAPT with sample data.
 
-Free edition. A paid edition will be offered later. Free keys already issued
-keep working.
+**New to PostVAPT? Read the [User Manual](USER_MANUAL.md)**: every screen and
+every task explained step by step, with pictures, in plain English.
 
-## Get started
+## Why teams use PostVAPT
 
-### 1. Get a free license key
+- **Know what to fix first.** Hundreds of "critical" findings become a short,
+  ordered list: Act, Attend, Track\*, Track, each with a deadline and a clear
+  reason.
+- **Real-world threat data.** Uses the CISA list of vulnerabilities attackers
+  exploit today (KEV) and the EPSS attack-probability score.
+- **Your business context counts.** Tell PostVAPT which systems are critical
+  and which face the internet; priorities follow.
+- **Track progress, scan after scan.** New, persisting, fixed and reappeared
+  findings are found automatically, with SLA deadlines that never reset.
+- **Proof, not promises.** Safe one-click retests confirm a fix before it is
+  closed.
+- **Audit-ready in one click.** An evidence pack mapped to PCI DSS v4.0 and
+  Bangladesh Bank ICT Security Guideline v4.0 controls, with clause and page.
+- **People stay in control.** Lowering a scanner's severity needs an analyst's
+  approval, and every action is recorded.
+- **Private by design.** Runs on-premise, works offline, and your scan data is
+  never sent to the developer.
 
-Fill in the **[license key request form](https://docs.google.com/forms/d/e/1FAIpQLSd--0kYvYrB2WO6oxgv-_bCoI7tWw8U95I-gF2Qh9Isnc6e_Q/viewform)**.
-Your key is e-mailed to you, usually within one business day.
+## Works with your scanners
 
-You can try PostVAPT before your key arrives: the offline demo needs no key.
+Nessus / Tenable, OpenVAS / Greenbone, Burp Suite, OWASP ZAP, Nmap, Nuclei,
+SARIF (Trivy, Grype, Semgrep, CodeQL and more) and CSV exports (Qualys, Rapid7,
+Acunetix, Invicti and more). The format is detected automatically.
 
-### 2. Download
+## See it in action
 
-Get the latest version from the **[Releases page](https://github.com/mstnisa/postvapt/releases/latest)**:
+| | |
+|---|---|
+| ![Finding details](docs/images/03-finding-detail.png) | ![Compliance](docs/images/05-compliance.png) |
+| **Every finding explained:** priority, deadline, evidence, solution, compliance impact and retest. | **Compliance posture:** gaps, work in progress and done, per PCI DSS and Bangladesh Bank control. |
+
+More screens in the [User Manual](USER_MANUAL.md#5-a-tour-of-the-screens).
+
+## Downloads
 
 | Platform | File |
 |---|---|
@@ -64,94 +71,44 @@ Get the latest version from the **[Releases page](https://github.com/mstnisa/pos
 | Linux (64-bit, glibc 2.41 or newer, e.g. Debian 13, Ubuntu 25.04) | `postvapt-<version>-linux-x86_64.zip` |
 | Docker (any Linux server) | `postvapt-<version>-docker.tar.gz` |
 
-No Python or other software needs to be installed.
+Installation for each platform: [User Manual, section 4](USER_MANUAL.md#4-install-postvapt-in-5-minutes).
 
-### 3. Install and run
+## Editions
 
-**Windows**
-
-1. Extract the zip to a folder, for example `C:\PostVAPT`.
-2. Double-click **`Start PostVAPT.bat`**. The dashboard opens in your browser at
-   http://127.0.0.1:8000.
-3. Open the **License** page, paste your key and press **Activate**.
-
-Windows SmartScreen may warn about a new, unsigned program. Choose
-**More info > Run anyway** if you downloaded the file from this repository.
-
-To try the demo first, open a terminal in the folder and run:
-
-```
-postvapt.exe demo --serve
-```
-
-**Linux**
-
-```bash
-unzip postvapt-<version>-linux-x86_64.zip -d ~/postvapt
-cd ~/postvapt/postvapt
-./postvapt-bin license activate <your-key>
-./postvapt-bin serve --open
-```
-
-**Docker**
-
-```bash
-docker load -i postvapt-<version>-docker.tar.gz
-docker run --rm -v postvapt-data:/data postvapt:<version> license activate <your-key>
-docker run --rm -it -v postvapt-data:/data postvapt:<version> user add admin --role admin
-docker run -d --name postvapt -p 8000:8000 -v postvapt-data:/data postvapt:<version>
-```
-
-The container serves the network, so it needs a user account: create the admin
-account (second command) before starting it. Put PostVAPT behind HTTPS (a
-reverse proxy or `--ssl-certfile` / `--ssl-keyfile`) before other people use it.
-
-## Your first scan
-
-On the dashboard: **Scans > Upload**, choose your scanner export and tick
-**Run triage**. Or from the command line:
-
-```bash
-postvapt asset-import assets.csv            # optional: host, criticality, exposure, owner
-postvapt ingest scan.nessus --scope dmz
-postvapt triage
-postvapt report --organisation "My Organisation"
-```
-
-`postvapt --help` lists every command.
-
-## Privacy and network use
-
-PostVAPT runs on your computers and stores everything in a local database.
-It only uses the network when you use a feature that needs it:
-
-| Feature | Destination | What is sent |
+| | Free edition | Paid edition |
 |---|---|---|
-| Live threat intelligence (can be turned off) | api.first.org (EPSS), www.cisa.gov (KEV) | CVE IDs only |
-| AI evidence extraction (off by default) | the provider you configure | finding text, with IP addresses removed for cloud providers |
-| Retest (you start it) | the host of the finding | a non-destructive protocol check |
-| Usage signal (only if you turn it on) | the PostVAPT developer | license ID, version, edition, OS family |
+| All features | yes | yes |
+| Assets (distinct hosts) | up to 50 | unlimited |
+| User accounts | up to 3 | unlimited |
+| PostgreSQL database | - | yes |
+| Price | free | coming soon |
 
-The license key is checked offline. PostVAPT works on networks with no internet
-access (`--offline`).
+Free edition. A paid edition will be offered later. Interested? Open an issue
+titled **"Paid edition interest"**.
+
+## Privacy
+
+PostVAPT stores everything in a local database on your computer. The license
+key is checked offline. Internet is only used for optional features you can
+see and control: live threat data (CVE numbers only), optional AI assistance
+(IP addresses removed), retests you start, and an anonymous usage signal that
+is **off unless you turn it on**. Details: [User Manual, section 10](USER_MANUAL.md#10-your-data-privacy-and-security).
 
 Run retests only against systems you are authorised to test.
 
 ## Support
 
-Questions, problems and feature requests: open an issue on the
+Questions, problems or ideas: open an issue on the
 **[Issues page](https://github.com/mstnisa/postvapt/issues)**. Please do not
-post scan results, host names or other sensitive data in an issue.
+post scan results, host names or other sensitive data.
 
 ## License
 
 PostVAPT is proprietary software, provided under the
-**[PostVAPT Evaluation License](LICENSE)**: you may install and use it for
+**[PostVAPT Evaluation License](LICENSE)**. You may install and use it for
 internal evaluation and send feedback. Copying, redistribution, modification
 and reverse engineering are not permitted. The source code is not published.
-
-Open-source components included in the downloads keep their own licences; see
-[THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES) and the `licenses` folder in each
-download.
+Open-source components keep their own licences: see
+[THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES).
 
 Copyright (c) 2026 Mst. Awalunnisa. All rights reserved.
