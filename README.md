@@ -68,7 +68,7 @@ More screens in the [User Manual](USER_MANUAL.md#5-a-tour-of-the-screens).
 | Platform | File |
 |---|---|
 | Windows 10/11 (64-bit) | `postvapt-<version>-windows-x86_64.zip` |
-| Linux (64-bit, glibc 2.41 or newer, e.g. Debian 13, Ubuntu 25.04) | `postvapt-<version>-linux-x86_64.zip` |
+| Linux (64-bit: Ubuntu 24.04+, Debian 13+, Fedora 39+; older Linux: use Docker) | `postvapt-<version>-linux-x86_64.zip` |
 | Docker (any Linux server) | `postvapt-<version>-docker.tar.gz` |
 
 Installation for each platform: [User Manual, section 4](USER_MANUAL.md#4-install-postvapt-in-5-minutes).

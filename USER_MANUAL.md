@@ -104,7 +104,8 @@ Answering these by hand takes days of spreadsheet work, and mistakes are easy.
 
 ## 3. What you need
 
-- **Windows 10 or 11** (64-bit), **or** a 64-bit **Linux** computer, **or** any
+- **Windows 10 or 11** (64-bit), **or** a 64-bit **Linux** computer (Ubuntu 24.04+,
+  Debian 13+, Fedora 39+), **or** any
   server with **Docker**.
 - About 300 MB of free disk space.
 - A modern web browser (Chrome, Edge or Firefox).
@@ -131,7 +132,8 @@ of text that starts with `PVL1-`. While you wait, you can already try the demo
 1. Open the **[Releases page](https://github.com/mstnisa/postvapt/releases/latest)**.
 2. Under **Assets**, click the file for your computer:
    - Windows: `postvapt-<version>-windows-x86_64.zip`
-   - Linux: `postvapt-<version>-linux-x86_64.zip`
+   - Linux: `postvapt-<version>-linux-x86_64.zip` (Ubuntu 24.04 or newer, Debian 13,
+     Fedora 39 or newer; on older Linux such as Ubuntu 22.04, use Docker)
    - Docker: `postvapt-<version>-docker.tar.gz`
 
 ### Step 3: Install and start
