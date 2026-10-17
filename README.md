@@ -12,6 +12,12 @@ your scan data never leaves your network.
 ![Downloads](https://img.shields.io/github/downloads/mstnisa/postvapt/total?label=downloads)
 [![Free license key](https://img.shields.io/badge/license%20key-free-2e8540)](https://docs.google.com/forms/d/e/1FAIpQLSd--0kYvYrB2WO6oxgv-_bCoI7tWw8U95I-gF2Qh9Isnc6e_Q/viewform)
 
+## See PostVAPT in 60 seconds
+
+https://github.com/user-attachments/assets/24fbd118-c6e8-44c2-adb2-3e881c9adde4
+
+[Download the video (1080p)](https://github.com/mstnisa/postvapt/releases/download/v0.1.0/PostVAPT-promo.mp4)
+
 ![PostVAPT overview](docs/images/01-overview.png)
 
 ## Start in 3 steps
