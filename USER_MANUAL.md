@@ -68,7 +68,7 @@ Answering these by hand takes days of spreadsheet work, and mistakes are easy.
 
 ## 2. Words you will see
 
-| Word | Meaning in plain English |
+| Word | Meaning |
 |---|---|
 | **Scan** / **report** | The file your scanner or tester gives you (for example a Nessus file). |
 | **Finding** | One problem found by a scan, on one system. |
