@@ -26,7 +26,7 @@ Nothing else to install. No key yet? Run `postvapt.exe demo --serve` to explore
 PostVAPT with sample data.
 
 **New to PostVAPT? Read the [User Manual](USER_MANUAL.md)**: every screen and
-every task explained step by step, with pictures, in plain English.
+every task explained step by step, with pictures.
 
 ## Why teams use PostVAPT
 
@@ -67,9 +67,9 @@ More screens in the [User Manual](USER_MANUAL.md#5-a-tour-of-the-screens).
 
 | Platform | File |
 |---|---|
-| Windows 10/11 (64-bit) | `postvapt-<version>-windows-x86_64.zip` |
-| Linux (64-bit: Ubuntu 24.04+, Debian 13+, Fedora 39+; older Linux: use Docker) | `postvapt-<version>-linux-x86_64.zip` |
-| Docker (any Linux server) | `postvapt-<version>-docker.tar.gz` |
+| Windows 10/11 (64-bit) | `postvapt-0.1.0-windows-x86_64.zip` |
+| Linux (64-bit: Ubuntu 24.04+, Debian 13+, Fedora 39+; older Linux: use Docker) | `postvapt-0.1.0-linux-x86_64.zip` |
+| Docker (any Linux server) | `postvapt-0.1.0-docker.tar.gz` |
 
 Installation for each platform: [User Manual, section 4](USER_MANUAL.md#4-install-postvapt-in-5-minutes).
 

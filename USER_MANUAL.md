@@ -131,10 +131,10 @@ of text that starts with `PVL1-`. While you wait, you can already try the demo
 
 1. Open the **[Releases page](https://github.com/mstnisa/postvapt/releases/latest)**.
 2. Under **Assets**, click the file for your computer:
-   - Windows: `postvapt-<version>-windows-x86_64.zip`
-   - Linux: `postvapt-<version>-linux-x86_64.zip` (Ubuntu 24.04 or newer, Debian 13,
+   - Windows: `postvapt-0.1.0-windows-x86_64.zip`
+   - Linux: `postvapt-0.1.0-linux-x86_64.zip` (Ubuntu 24.04 or newer, Debian 13,
      Fedora 39 or newer; on older Linux such as Ubuntu 22.04, use Docker)
-   - Docker: `postvapt-<version>-docker.tar.gz`
+   - Docker: `postvapt-0.1.0-docker.tar.gz`
 
 ### Step 3: Install and start
 
@@ -155,7 +155,7 @@ Your data is saved automatically in `%APPDATA%\PostVAPT`.
 #### On Linux
 
 ```bash
-unzip postvapt-<version>-linux-x86_64.zip -d ~/postvapt
+unzip postvapt-0.1.0-linux-x86_64.zip -d ~/postvapt
 cd ~/postvapt/postvapt
 ./postvapt-bin serve --open
 ```
@@ -163,10 +163,10 @@ cd ~/postvapt/postvapt
 #### With Docker
 
 ```bash
-docker load -i postvapt-<version>-docker.tar.gz
-docker run --rm -v postvapt-data:/data postvapt:<version> license activate <your-key>
-docker run --rm -it -v postvapt-data:/data postvapt:<version> user add admin --role admin
-docker run -d --name postvapt -p 8000:8000 -v postvapt-data:/data postvapt:<version>
+docker load -i postvapt-0.1.0-docker.tar.gz
+docker run --rm -v postvapt-data:/data postvapt:0.1.0 license activate <your-key>
+docker run --rm -it -v postvapt-data:/data postvapt:0.1.0 user add admin --role admin
+docker run -d --name postvapt -p 8000:8000 -v postvapt-data:/data postvapt:0.1.0
 ```
 
 Then open `http://<server-address>:8000` and sign in as `admin`.
