@@ -182,7 +182,7 @@ postvapt.exe demo --serve
 ```
 
 Open **http://127.0.0.1:8000** in your browser. Press `Ctrl + C` in the black
-window to stop the demo. All pictures in this manual come from the demo.
+window to stop the demo. The pictures in this manual were taken from a real installation that scanned an intentionally vulnerable test lab, not from the demo.
 
 ### Step 5: Activate your key
 
