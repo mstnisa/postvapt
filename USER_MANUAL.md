@@ -322,6 +322,17 @@ Keep your standards, policies and guidelines in one searchable place. Add PDF
 files, whole folders or web links, then search across them with page numbers.
 Link a document to a framework so control pages show the exact clause.
 
+**Official documents for the compliance mapping**
+
+| Document | Where to get it | SHA-256 |
+|---|---|---|
+| Bangladesh Bank Guideline on ICT Security, Version 4.0 (2023) | Free from the Bangladesh Bank website: [jun192023_ictsecurityv4.pdf](https://www.bb.org.bd/aboutus/regulationguideline/brpd/jun192023_ictsecurityv4.pdf) | `86967728dcb6dd9839be7c412e86380d3ff96df438d0fbcc319aec257a97ff74` |
+| PCI DSS v4.0.1 Requirements and Testing Procedures (June 2024) | Download it yourself from the PCI SSC Document Library after accepting PCI SSC's license terms. It is licensed by PCI SSC, so it is not included in this repository. | `5e6b9093b84007b973097d20126a3768ea2f0a1d4200255c849b0fb3bf04ebc7` |
+
+Add both on the **Library** page so control pages can show the exact clause
+and page. To confirm you have the same edition, compare the file's SHA-256
+(PowerShell: `Get-FileHash <file> -Algorithm SHA256`).
+
 ### Settings, Users and License
 
 ![Settings](docs/images/11-settings.png)
