@@ -49,6 +49,9 @@ every task explained step by step, with pictures.
   closed.
 - **Audit-ready in one click.** An evidence pack mapped to PCI DSS v4.0 and
   Bangladesh Bank ICT Security Guideline v4.0 controls, with clause and page.
+- **No clause left unchecked.** A coverage matrix records a decision for every
+  clause of both documents (280 in PCI DSS, 738 in the Bangladesh Bank guideline):
+  mapped, out of scope with the reason, or still to review.
 - **People stay in control.** Lowering a scanner's severity needs an analyst's
   approval, and every action is recorded.
 - **Private by design.** Runs on-premise, works offline, and your scan data is
@@ -73,9 +76,9 @@ More screens in the [User Manual](USER_MANUAL.md#5-a-tour-of-the-screens).
 
 | Platform | File |
 |---|---|
-| Windows 10/11 (64-bit) | `postvapt-0.1.1-windows-x86_64.zip` |
-| Linux (64-bit: Ubuntu 24.04+, Debian 13+, Fedora 39+; older Linux: use Docker) | `postvapt-0.1.1-linux-x86_64.zip` |
-| Docker (any Linux server) | `postvapt-0.1.1-docker.tar.gz` |
+| Windows 10/11 (64-bit) | `postvapt-0.1.2-windows-x86_64.zip` |
+| Linux (64-bit: Ubuntu 24.04+, Debian 13+, Fedora 39+; older Linux: use Docker) | `postvapt-0.1.2-linux-x86_64.zip` |
+| Docker (any Linux server) | `postvapt-0.1.2-docker.tar.gz` |
 
 Installation for each platform: [User Manual, section 4](USER_MANUAL.md#4-install-postvapt-in-5-minutes).
 
