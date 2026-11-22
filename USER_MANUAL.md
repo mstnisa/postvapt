@@ -131,10 +131,10 @@ of text that starts with `PVL1-`. While you wait, you can already try the demo
 
 1. Open the **[Releases page](https://github.com/mstnisa/postvapt/releases/latest)**.
 2. Under **Assets**, click the file for your computer:
-   - Windows: `postvapt-0.1.3-windows-x86_64.zip`
-   - Linux: `postvapt-0.1.3-linux-x86_64.zip` (Ubuntu 24.04 or newer, Debian 13,
+   - Windows: `postvapt-0.1.4-windows-x86_64.zip`
+   - Linux: `postvapt-0.1.4-linux-x86_64.zip` (Ubuntu 24.04 or newer, Debian 13,
      Fedora 39 or newer; on older Linux such as Ubuntu 22.04, use Docker)
-   - Docker: `postvapt-0.1.3-docker.tar.gz`
+   - Docker: `postvapt-0.1.4-docker.tar.gz`
 
 ### Step 3: Install and start
 
@@ -155,7 +155,7 @@ Your data is saved automatically in `%APPDATA%\PostVAPT`.
 #### On Linux
 
 ```bash
-unzip postvapt-0.1.3-linux-x86_64.zip -d ~/postvapt
+unzip postvapt-0.1.4-linux-x86_64.zip -d ~/postvapt
 cd ~/postvapt/postvapt
 ./postvapt-bin serve --open
 ```
@@ -163,10 +163,10 @@ cd ~/postvapt/postvapt
 #### With Docker
 
 ```bash
-docker load -i postvapt-0.1.3-docker.tar.gz
-docker run --rm -v postvapt-data:/data postvapt:0.1.3 license activate <your-key>
-docker run --rm -it -v postvapt-data:/data postvapt:0.1.3 user add admin --role admin
-docker run -d --name postvapt -p 8000:8000 -v postvapt-data:/data postvapt:0.1.3
+docker load -i postvapt-0.1.4-docker.tar.gz
+docker run --rm -v postvapt-data:/data postvapt:0.1.4 license activate <your-key>
+docker run --rm -it -v postvapt-data:/data postvapt:0.1.4 user add admin --role admin
+docker run -d --name postvapt -p 8000:8000 -v postvapt-data:/data postvapt:0.1.4
 ```
 
 Then open `http://<server-address>:8000` and sign in as `admin`.
@@ -293,12 +293,12 @@ results can prove. To show that nothing was forgotten, the coverage matrix lists
 |---|---|
 | **Mapped** | Findings are linked to this clause; it appears on the Compliance page. |
 | **Out of scope** | Scan results cannot prove this clause (for example a written policy or staff training). The reason says what evidence it needs instead. |
-| **To review** | A technical clause that scans might prove. An analyst still has to decide. |
 
 Open it with **View matrix** next to each framework on the Compliance page, and
 use the buttons to show only one decision. PCI DSS v4.0.1 has 280 clauses
-(18 mapped, 257 out of scope, 5 to review); the Bangladesh Bank guideline has
-738 (19 mapped, 694 out of scope, 25 to review). The list was checked against
+(19 mapped, 261 out of scope); the Bangladesh Bank guideline has 738
+(32 mapped, 706 out of scope). Every clause has a decision; none is left
+waiting. The list was checked against
 the official PDFs, so no clause number is missing. Only clause numbers, pages
 and PostVAPT's own reasons are shown, never the licensed text.
 
